@@ -1,12 +1,51 @@
+:root {
+    --first-color: #000000;
+    --second-color: #000000;
+    --background-color: rgb(255, 255, 255);
+  }
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    text-align: center;
-    margin: 0;
+    font-family: Helvetica Neue, sans-serif;
+    background-color: var(--background-color);
+    text-align: left;
+    margin: 0 auto;
     padding: 20px;
+    width: 80%;
 }
 
 h1 {
-    color: #4A90E2;
+    color: var(--first-color);
+    font-size: 50px;
+    margin-bottom: 7px;
+}
+
+h2 {
+    color: var(--first-color);
+    font-size: 20px;
+}
+
+h3 {
+    color: var(--second-color);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+hr {
+    border-color: var(--first-color);
+}
+
+p {
+    color: var(--second-color);
+    margin-top: 5px;
+    margin-bottom: 1px;
+    font-size: 18px;
+}
+
+ul {
+    color: var(--second-color);
+    padding-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 18px;
 }
