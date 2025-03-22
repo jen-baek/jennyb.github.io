@@ -1,8 +1,16 @@
 :root {
     --first-color: #000000;
     --second-color: #000000;
+    --link-color: #525252;
     --background-color: rgb(255, 255, 255);
   }
+
+.dark-mode {
+    --first-color: #fff;
+    --second-color: #ffffff;
+    --link-color: rgb(183, 183, 183);
+    --background-color: #121212;
+}
 
 body {
     font-family: Helvetica Neue, sans-serif;
@@ -22,16 +30,21 @@ h1 {
 h2 {
     color: var(--first-color);
     font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 2px;
 }
 
 h3 {
     color: var(--second-color);
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
+    margin-top: 15px;
     margin-bottom: 5px;
 }
 
 hr {
+    margin-top: 2px;
+    border: 1px solid transparent;
     border-color: var(--first-color);
 }
 
@@ -48,4 +61,60 @@ ul {
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 18px;
+}
+
+a {
+    color: var(--link-color);
+}
+
+.lightdark-button {
+    text-align: right;
+}
+
+#mode-toggle {
+    text-align: right;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: var(--first-color);
+    color: var(--background-color);
+    border: 2px solid transparent;
+    border-color: var(--first-color);
+  }
+  
+  #mode-toggle:hover {
+    background-color: var(--background-color);
+    color: var(--first-color);
+  }
+
+  .pdf-button {
+    padding-top: 50px;
+    text-align: center;
+}
+  
+details {
+    margin-bottom: 10px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    color: var(--first-color);
+}
+
+summary::marker {
+    content: "▶ ";
+    color: var(--first-color);
+}
+
+details[open] summary::marker {
+    content: "▼ ";
+    color: var(--first-color);
+}
+
+summary:hover {
+    color: #007BFF;
 }
